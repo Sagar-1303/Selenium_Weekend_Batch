@@ -1,4 +1,4 @@
-package com.ShoppersStack_GenericUtility;
+ package com.ShoppersStack_GenericUtility;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -59,11 +59,11 @@ public class Base_test {
 	public void beforeClass() throws IOException {
 		System.out.println("@BeforeClass");
 
-	//	String browser = fileUtility.readDataFromPropertyFile("browserName");
-	//	String url = fileUtility.readDataFromPropertyFile("Url");
+		String browser = fileUtility.readDataFromPropertyFile("browserName");
+		String url = fileUtility.readDataFromPropertyFile("Url");
 		
-		String browser = System.getProperty("browserName");
-		String url = System.getProperty("Url");
+//		String browser = System.getProperty("browserName");
+//		String url = System.getProperty("Url");
 
 		if (browser.contains("chrome")) {
 			driver = new ChromeDriver();
